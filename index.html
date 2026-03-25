@@ -774,6 +774,105 @@
       font-size: 14px;
     }
   }
+
+  /* EXPERT SECTION */
+  .expert-section {
+    padding: 80px 24px;
+    background: var(--white);
+  }
+
+  .expert-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 60px auto 0;
+  }
+
+  .expert-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(59,34,25,0.15);
+  }
+
+  .expert-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .expert-bio {
+    color: var(--deep);
+  }
+
+  .expert-intro {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--rose);
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+
+  .expert-desc {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--muted);
+    margin-bottom: 40px;
+  }
+
+  .expert-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+    padding: 32px 0;
+    border-top: 1px solid rgba(201,123,99,0.2);
+    border-bottom: 1px solid rgba(201,123,99,0.2);
+  }
+
+  .expert-stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--rose);
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .expert-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--deep);
+    padding-left: 24px;
+    border-left: 3px solid var(--gold);
+  }
+
+  @media (max-width: 768px) {
+    .expert-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .expert-stats {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -881,6 +980,45 @@
   </div>
 </section>
 
+
+<!-- EXPERT -->
+<section class="expert-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Quién creó este método</div>
+      <h2 class="section-title">Conoce <em>Camila Herrera</em></h2>
+    </div>
+    
+    <div class="expert-content reveal">
+      <div class="expert-image">
+        <img src="camila-herrera.jpg" alt="Dra. Camila Herrera - Especialista en Dermatología Natural">
+      </div>
+      
+      <div class="expert-bio">
+        <p class="expert-intro">Dermatóloga especializada en tratamientos naturales para el cuidado de la piel con más de 12 años de experiencia clínica.</p>
+        
+        <p class="expert-desc">Camila Herrera se dedica a investigar y desarrollar métodos naturales efectivos para los problemas más comunes de la piel. Su enfoque combina el conocimiento dermatológico con ingredientes accesibles y seguros.</p>
+        
+        <div class="expert-stats">
+          <div class="expert-stat">
+            <div class="stat-number">12+</div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          <div class="expert-stat">
+            <div class="stat-number">15,000+</div>
+            <div class="stat-label">Mujeres transformadas</div>
+          </div>
+          <div class="expert-stat">
+            <div class="stat-number">94%</div>
+            <div class="stat-label">Tasa de éxito</div>
+          </div>
+        </div>
+        
+        <p class="expert-quote">"La belleza natural no necesita ser costosa ni complicada. Los ingredientes correctos, aplicados de la forma adecuada, pueden transformar tu piel sin efectos secundarios."</p>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- TESTIMONIALS -->
 <section class="testi-section">
   <div class="container">
